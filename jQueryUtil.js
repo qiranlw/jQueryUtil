@@ -100,6 +100,8 @@ $('#pass').keyup(function (e) {
 	var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
 	var enoughRegex = new RegExp("(?=.{6,}).*", "g");
 	if (false == enoughRegex.test($(this).val())) {
-		
+		$('#passstrength').html('More Characters');
 	}
 });
+
+//
